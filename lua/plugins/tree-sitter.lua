@@ -4,7 +4,7 @@ return {
   config = function()
     local treesitter = require('nvim-treesitter.configs')
     treesitter.setup {
-      ensure_installed = { "c", "lua", "vim", "vimdoc", "python", "query", "elixir", "go", "goctl", "gomod", "markdown", "markdown_inline", "typescript", "dart"},
+      ensure_installed = { "c", "lua", "vim", "vimdoc", "python", "query", "elixir", "go", "goctl", "gomod", "markdown", "markdown_inline", "typescript", "dart", "java"},
       -- Install parsers synchronously (only applied to `ensure_installed`)
       sync_install = true,
       -- Automatically install missing parsers when entering buffer
