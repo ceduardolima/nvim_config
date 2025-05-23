@@ -1,4 +1,3 @@
----- Package Manager
 local lazypath = vim.fn.stdpath "data" .. "/lazy/lazy.nvim"
 if not vim.loop.fs_stat(lazypath) then
   vim.fn.system {
@@ -13,10 +12,9 @@ end
 vim.opt.rtp:prepend(lazypath)
 
 require "core.vim-config"
-
 require("lazy").setup "plugins"
 
-vim.cmd [[colorscheme gruvbox-material]]
+--- vim.cmd [[colorscheme gruvbox-material]]
 
 -- vim.api.nvim_set_hl(0, "Normal", { bg = "none"})
 -- vim.api.nvim_set_hl(0, "NormalFloat", { bg = "none"})
