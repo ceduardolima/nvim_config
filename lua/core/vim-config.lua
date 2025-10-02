@@ -1,5 +1,6 @@
------ Vim config
+-- Vim config
 vim.cmd("syntax on")
+
 -- vim.cmd("set incsearch")
 vim.cmd("set encoding=UTF-8")
 vim.cmd("set rnu ")
@@ -22,13 +23,9 @@ vim.cmd("set termguicolors")
 vim.api.nvim_set_option("clipboard", "unnamedplus")
 
 vim.keymap.set("n", "<leader>tn", ":tabnew %<CR>")
-
--- greatest remap ever
-vim.keymap.set("x", "<leader>p", [["_dP]])
-
--- next greatest remap ever : asbjornHaland
-vim.keymap.set({ "n", "v" }, "<leader>y", [["+y]])
-vim.keymap.set("n", "<leader>Y", [["+Y]])
+vim.keymap.set("n", "<M-J>", ":cnext<CR>")
+vim.keymap.set("n", "<M-K>", ":cprev<CR>")
+vim.keymap.set("n", "<M-P>", '"_dP<CR>', { desc = "Colar sem apagar o registro anterior" })
 
 vim.g.loaded_netrw = 1
 vim.g.loaded_netrwPlugin = 1
